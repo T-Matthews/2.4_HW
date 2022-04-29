@@ -65,7 +65,7 @@ def random_shopping():
                 #The length of item name will be used to format the option 3, when they go to look at their cart.
                 s_cart[new_item.lower()] = [cost,quantity,len(new_item)]
                 print()
-                total_cost+=round(cost*quantity,2)
+                total_cost+=round(cost*int(quantity),2)
                 if quantity == 1 and plural_flag == False:
                     print(f'Great! You purchased one {new_item} for ${cost}.'
                     +f'You now have ${round(total_cost,2)} worth of goods in your cart.')
